@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", monospace;
+  --font-body: "Inter", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080b12;
+  color: #e7e6e2;
+}
+
+/* Visible keyboard focus everywhere, deliberately styled rather than removed */
+:focus-visible {
+  outline: 2px solid #5b8def;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.glass {
+  background: linear-gradient(180deg, rgba(26, 32, 51, 0.6), rgba(17, 22, 36, 0.5));
+  border: 1px solid rgba(91, 141, 239, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.text-glow {
+  text-shadow: 0 0 30px rgba(91, 141, 239, 0.35);
+}
+
+::selection {
+  background: rgba(245, 166, 35, 0.35);
+  color: #fff;
+}
+
+/* thin scrollbar to match the wire aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #252c42;
+  border-radius: 8px;
+}
