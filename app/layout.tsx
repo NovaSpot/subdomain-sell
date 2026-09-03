@@ -21,7 +21,7 @@ const body = Inter({
 
 export const metadata: Metadata = {
   title: `${ROOT_DOMAIN} — claim your handle`,
-  description: `Get a permanent, ownable subdomain on ${ROOT_DOMAIN}. Instant DNS, free SSL, and a dashboard you actually control.`,
+  description: `Get a permanent, ownable subdomain on ${ROOT_DOMAIN}. Instant DNS, free SSL, and a dashboard you actually control..`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
